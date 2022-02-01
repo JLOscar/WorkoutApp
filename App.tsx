@@ -1,10 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { useState } from "react";
+import { Dimensions, SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { Footer, Tabs } from "./Components/Footer/Footer";
+import { Header } from "./Components/Header/Header";
+import { Page } from "./Components/Page/Page";
 
 export default function App() {
+  const [activeTab, setActiveTab] = useState(Tabs.PROFILE);
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Header />
+      <Page activeTab={activeTab} />
+      <Footer setActiveTab={setActiveTab} />
       <StatusBar style="auto" />
     </View>
   );
@@ -12,9 +19,10 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
+    position: "relative",
+    height: "100%",
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: "column",
+    justifyContent: "space-between",
   },
 });
