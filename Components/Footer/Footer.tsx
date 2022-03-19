@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     bottom: 0,
     height: 60,
     width: "100%",
-    backgroundColor: "grey",
+    backgroundColor: "#334E59",
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-evenly",

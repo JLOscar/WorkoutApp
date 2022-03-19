@@ -16,6 +16,6 @@ const styles = StyleSheet.create({
     top: 0,
     height: getHeaderHeight(),
     width: "100%",
-    backgroundColor: "grey",
+    backgroundColor: "#334E59",
   },
 });

@@ -15,7 +15,7 @@ export const Profile: React.FC<Props> = (props) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "pink",
+    backgroundColor: "#334E59",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
